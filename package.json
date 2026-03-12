@@ -1,0 +1,24 @@
+{
+  "name": "sf-lightning-to-classic",
+  "version": "1.0.0",
+  "description": "Chrome extension that redirects Salesforce Lightning record URLs to Classic view",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "icons": "node scripts/generate-icons.mjs",
+    "package": "npm run build && npm run icons && node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.0.0",
+    "chrome-types": "^0.1.327",
+    "esbuild": "^0.24.0",
+    "sharp": "^0.33.5",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
