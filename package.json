@@ -2,8 +2,16 @@
   "name": "sf-lightning-to-classic",
   "version": "1.0.0",
   "description": "Chrome extension that redirects Salesforce Lightning record URLs to Classic view",
+  "author": "cjunker",
   "private": true,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cjunks94/sf-lightning-to-classic.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "node build.mjs",
     "test": "vitest run",

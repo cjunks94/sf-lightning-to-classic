@@ -11,12 +11,13 @@
     <h1>SF Lightning → Classic</h1>
     <div class="toggle-row">
       <label class="switch">
-        <input type="checkbox" id="toggle">
+        <input type="checkbox" id="toggle" aria-label="Toggle redirection">
         <span class="slider"></span>
       </label>
-      <span id="status" class="status">Active</span>
+      <span id="status" class="status" aria-live="polite">Active</span>
     </div>
     <p class="description">Redirect Lightning record pages to Classic view</p>
+    <p class="version" id="version"></p>
   </div>
   <script src="../dist/popup.js"></script>
 </body>

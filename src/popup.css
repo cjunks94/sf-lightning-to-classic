@@ -81,3 +81,25 @@ input:checked + .slider {
 input:checked + .slider::before {
   transform: translateX(18px);
 }
+
+.switch input:focus-visible + .slider {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.version {
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 8px;
+  text-align: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background: #1e1e1e; }
+  h1 { color: #e0e0e0; }
+  .status { color: #b0b0b0; }
+  .description { color: #808080; }
+  .version { color: #666; }
+  .slider { background: #555; }
+  .slider::before { background: #ccc; }
+}
